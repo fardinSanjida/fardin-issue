@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Issues Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="w-[520px] bg-base-100 shadow-lg font-Geist mx-auto p-8">
+    <header class="text-center">
+        <img class="mx-auto mb-6" src="assets/github-logo.png" alt="" srcset="">
+        <h2 class="font-semibold text-2xl">GitHub Issues Tracker</h2>
+        <p class="text-lg text-gray-500">Sign in to manage your issues</p>
+    </header>
+    <section>
+        <div class="card bg-base-100 w-full ">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-xl">Username</label>
+          <input type="text" id="username" class="input w-full text-lg rounded-lg" placeholder="Username" />
+          <p class="text-primary text-lg">Default:admin</p>
+          <label class="label text-xl">Password</label>
+          <input type="password" id="password" class="input w-full text-lg rounded-lg " placeholder="Password" />
+          <p class="text-primary text-lg">Default:admin123</p>
+         
+          <button id="sign-in" class="btn btn-primary mt-4 text-xl py-6">Sign In</button>
+        </fieldset>
+      </div>
+    </div>
+    </section>
+    <section>
+        
+      <div class="flex items-center gap-4 mt-6 mx-auto">
+        <hr class="w-50">
+        <p>OR</p>
+        <hr class="w-50">
+      </div>
+      <br>
+      <div class="text-center">
+        <p>Demo Credentials:</p>
+        <div class="bg-gray-100 p-10 rounded-lg w-full mt-2">
+          <h3 class="text-xl"><span class="font-bold">Username:</span> admin</h3>
+          <h3 class="text-xl"><span class="font-bold">Password:</span> admin123</h3>
+        </div>
+      </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>
+
+
+
+
