@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitHub Issues Tracker Home Page</title>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <h2>hello.welcome</h2>
-</body>
+<body class="font-geist bg-base-200">
+    <nav class=" flex w-full shadow-md bg-white ">
+        <div class="flex items-center ">
+            <div class="flex ml-8 my-4 mr-110">
+                <img class="w-8 mr-2" src="assets/github-logo.png" alt="" srcset="">
+                <h2 class="text-xl font-bold">GitHub Issues Tracker</h2>
+            </div>
+            <br>
+
+           <div>
+             <div class="flex my-4 ml-110">
+                <label class="input">
+                <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                         <g
+                   stroke-linejoin="round"
+                          stroke-linecap="round"
+                  stroke-width="2.5"
+                 fill="none"
+               stroke="currentColor"
+                    >
+                  <circle cx="11" cy="11" r="8"></circle>
+                 <path d="m21 21-4.3-4.3"></path>
+                      </g>
+                      </svg>
+                        <input type="search" required placeholder="Search Issues" />
+                    </label>
+                      <button class=" ml-3 btn btn-primary join-item"><i class="fa-solid fa-plus"></i>New Issues</button>
+            </div>
+          
+           
+        </div>
+    </nav>
+    <br>
+    <main class="w-10/12 my-8 mx-auto ">
+      <section class="p-10 shadow-lg rounded-lg mb-8 bg-white">
+        <button class="btn btn-primary  w-1/11 mr-4">All</button>
+        <button class="btn btn-primary btn-soft w-1/11 mr-4">Open</button>
+        <button class="btn btn-primary btn-soft w-1/11">Closed</button>
+      </section>
+    
+
+    </main>
+
+   
 </html>
