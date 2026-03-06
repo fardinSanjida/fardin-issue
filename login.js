@@ -6,8 +6,9 @@ document.getElementById('sign-in').addEventListener('click', function() {
     if (username === 'admin' && password === 'admin123') {
        alert('Login successful!');
        window.location.replace('/home.html');
-    } else {
-        alert('Invalid credentials.');
-        return
-    }
+    } 
+    // else {
+    //     alert('Invalid credentials.');
+    //     return
+    // }
 });
