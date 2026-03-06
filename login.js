@@ -7,8 +7,8 @@ document.getElementById('sign-in').addEventListener('click', function() {
        alert('Login successful!');
        window.location.replace('/home.html');
     } 
-    // else {
-    //     alert('Invalid credentials.');
-    //     return
-    // }
+    else {
+        alert('Invalid credentials.');
+        return
+    }
 });
