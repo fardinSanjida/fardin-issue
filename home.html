@@ -42,7 +42,7 @@
       </div>
   </nav>
   <br>
-  <main class="w-10/12  mx-auto pb-10 ">
+  <main  class="w-10/12  mx-auto pb-10 ">
     <section class="p-10 shadow-lg rounded-lg mb-8 bg-white my-8">
       <button class="btn btn-primary  w-1/11 mr-4">All</button>
       <button class="btn btn-primary btn-soft w-1/11 mr-4">Open</button>
@@ -71,37 +71,16 @@
       </div>
 
     </section>
-    <section class="grid gird-cols-4 gap-2">
-      <div class="card bg-base-100 w-96 shadow-sm border-t-6 border-green-400">
-        <div class="card-body space-y-3 pb-10">
-          <div class="flex justify-between">
-            <img src="assets/Open-Status.png" alt="">
-            <h2 class=" px-2 py-1 text-center font-bold rounded-4xl bg-red-100 text-red-500 w-20">HIGH</h2>
-          </div>
-          <h2 class="card-title font-bold text-2xl">Fix navigation menu on mobile devices</h2>
-          <p class=" text-gray-500 text-lg">The navigation menu doesn't collapse properly on mobile devices...</p>
-          <div class="card-actions ">
-
-            <button class=" font-bold btn border-red-600 rounded-4xl btn-soft btn-outline btn-error">BUG</button>
-            <button class=" font-bold btn border-orange-500 rounded-4xl btn-soft btn-outline btn-warning">HELP
-              WANTED</button>
-              
-          </div>
-          <hr class="w-full">
-          <div class=" text-gray-500 text-lg">
-            <p>#1 by john_doe</p>
-            <p>1/15/2024</p>
-
-          </div>
-
-        </div>
-      </div>
-
-
+    <section id="issues-container" class="grid grid-cols-1 sm:grid-cols-4 gap-6">
+      
+    </section>
+    <section id="loadSpiner" class="h-[60vh] hidden justify-center items-center">
+      <span class="loading loading-spinner loading-xl"></span>
     </section>
 
 
   </main>
 
-
+ <script src="./homepage.js"></script>
+</body>
 </html>
