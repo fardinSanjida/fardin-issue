@@ -44,16 +44,16 @@
   <br>
   <main  class="w-10/12  mx-auto pb-10 ">
     <section class="p-10 shadow-lg rounded-lg mb-8 bg-white my-8">
-      <button class="btn btn-primary  w-1/11 mr-4">All</button>
-      <button class="btn btn-primary btn-soft w-1/11 mr-4">Open</button>
-      <button class="btn btn-primary btn-soft w-1/11">Closed</button>
+      <button id="tab-all" onclick="switchTab('all')" class="btn btn-primary  w-1/11 mr-4">All</button>
+      <button id="tab-open" onclick="switchTab('open')" class="btn btn-primary w-1/11 mr-4">Open</button>
+      <button id="tab-close" onclick="switchTab('close')" class="btn btn-primary w-1/11">Closed</button>
     </section>
     <section class="p-8 shadow-lg rounded-md mb-8 bg-white">
       <div class="flex justify-between items-center">
         <div class="flex">
           <img class="p-4" src="assets/Aperture.png" alt="" srcset="">
           <div>
-            <h2 class="text-2xl font-bold"><span>0</span> Issues</h2>
+            <h2 class="text-2xl font-bold"><span id="issus-number">0</span> Issues</h2>
             <p class="text-lg">Track and manage your project issues</p>
           </div>
         </div>
