@@ -16,33 +16,29 @@
 </head>
 
 <body class="font-geist bg-base-200">
-  <nav class=" flex w-full shadow-md bg-white ">
-    <div class="flex items-center ">
-      <div class="flex ml-8 my-4 mr-110">
-        <img class="w-8 mr-2" src="assets/github-logo.png" alt="" srcset="">
-        <h2 class="text-xl font-bold">GitHub Issues Tracker</h2>
-      </div>
-      <br>
+  <nav class="flex w-full justify-between items-center shadow-md bg-white px-8">
+    <div class="flex my-4 items-center">
+      <img class="w-8 mr-2" src="assets/github-logo.png" alt="GitHub Logo">
+      <h2 class="text-xl font-bold">GitHub Issues Tracker</h2>
+    </div>
 
-      <div>
-        <div class="flex my-4 ml-110">
-          <label class="input">
-            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
-                <circle cx="11" cy="11" r="8"></circle>
-                <path d="m21 21-4.3-4.3"></path>
-              </g>
-            </svg>
-            <input type="search" required placeholder="Search Issues" />
-          </label>
-          <button class=" ml-3 btn btn-primary join-item"><i class="fa-solid fa-plus"></i>New Issues</button>
-        </div>
-
-
-      </div>
+    <div class="flex my-4 items-center">
+      <label class="input">
+        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </g>
+        </svg>
+        <input id="search-input" type="search" required placeholder="Search Issues" />
+      </label>
+      <button class="ml-3 btn btn-primary join-item">
+        <i class="fa-solid fa-plus"></i> New Issues
+      </button>
+    </div>
   </nav>
   <br>
-  <main  class="w-10/12  mx-auto pb-10 ">
+  <main class="w-10/12  mx-auto pb-10 ">
     <section class="p-10 shadow-lg rounded-lg mb-8 bg-white my-8">
       <button id="tab-all" onclick="switchTab('all')" class="btn btn-primary  w-1/11 mr-4">All</button>
       <button id="tab-open" onclick="switchTab('open')" class="btn btn-primary w-1/11 mr-4">Open</button>
@@ -71,16 +67,61 @@
       </div>
 
     </section>
-    <section id="issues-container" class="grid grid-cols-1 sm:grid-cols-4 gap-6">
-      
+    <section>
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="issue-details" class="modal">
+        <div class="modal-box space-y-3">
+          <h3 class="text-lg font-bold">Fix broken image uploads</h3>
+          <div>
+            <div class="flex gap-3 items-center">
+              <p class="px-4 bg-green-400 py-1 rounded-xl w-fit text-white">Opened</p>
+              <p>•</p>
+              <p>Opened by Fardin Sanjida</p>
+              <p>•</p>
+              <p>22/02/2026</p>
+            </div>
+
+            <div class="card-actions my-5">
+              <p class="font-bold btn border-red-600 rounded-4xl btn-soft btn-outline btn-error">
+                BUG
+              </p>
+              <button class="font-bold btn border-orange-600 rounded-4xl btn-outline btn-warning">
+                HELP WANTED
+              </button>
+            </div>
+            <p>The navigation menu doesn't collapse properly on mobile devices. Need to fix the responsive behavior.</p>
+            <div class="flex justify-between mt-4">
+              <div>
+                <p>Assignee:</p>
+                <h2 class="font-bold text-lg">Fardin Sanjida</h2>
+              </div>
+              <div>
+                <p>Priority:</p>
+                <button class="font-bold btn btn-primary border-red-600 rounded-4xl btn-soft btn-outline btn-error">
+                  HIGH
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-action">
+              <button onclick="document.getElementById('issue-details').close()" class="btn btn-primary">Close</button>
+           
+          </div>
+        </div>
+      </dialog>
+    </section>
+
+    <section id="issues-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     </section>
     <section id="loadSpiner" class="h-[60vh] hidden justify-center items-center">
       <span class="loading loading-spinner loading-xl"></span>
     </section>
 
 
+
   </main>
 
- <script src="./homepage.js"></script>
+  <script src="./homepage.js"></script>
 </body>
+
 </html>
